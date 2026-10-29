@@ -1,13 +1,12 @@
 ﻿namespace MusicStoreAPI.Models;
 
-public class Products
+public class Product
 {
-    public int Id { get; set; }
+    public int Id { get; set; } = Random.Shared.Next();
     public string NameCD { get; set; } = String.Empty;
     public string Artist { get; set; } = String.Empty;
     public string Type { get; set; } = String.Empty;
-    public int Price { get; set; }
-
-
+    public decimal Price { get; set; }
+    public int Stock { get; set; }
 
 }
